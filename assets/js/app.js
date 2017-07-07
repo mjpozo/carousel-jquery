@@ -1,7 +1,31 @@
 
 $(document).ready(function(){
+
+	var x = $(".contenedor-img");
+
+	function showSlides(){
+		var cont = 0;
+	for (i=0 ; i<x.lenght ; i++){
+		$("#cont-" + i.toString()).addClass("escondido");
+		if (cont == index){
+			$("#cont-" + i.toString()).removeClass("escondido");
+		}
+		cont++;
+	}
+	}
 	
-	
+
+
+	/*$("#cont-img").each(function(index,element){
+		console.log(typeof index)
+		element.addClass("escondido");
+		if (cont == index){
+			element.removeClass("escondido");
+		}
+		cont++;
+	});*/
+
+	setTimeout(showSlides, 5000);
 
 });
 

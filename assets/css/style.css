@@ -93,7 +93,6 @@
 }*/
 
 * {
-	background: #F1CFF4;
 	margin: 0;
 	padding: 0;
 }
@@ -101,6 +100,8 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: url(../img/cat-pattern.jpg);
+	background-repeat: repeat;
 }
 
 .h-margin {
@@ -119,9 +120,18 @@ body {
 	background: transparent;
 }
 
+.escondido {
+	display: none;
+}
+
 header {
 	width: 100%;
-	height: 20vh;
+	height: 18vh;
+	padding: 1.5% 0;
+	font-family: 'Over the Rainbow', cursive;
+	font-size: 400%;
+	font-weight: 900;
+	background: linear-gradient(whitesmoke,white);
 }
 
 .contenedor-btn {
@@ -139,6 +149,27 @@ header {
 
 .contenedor-img {
 	width: 100%;
+}
+
+.cont-img {
+	background: black;
+}
+
+.caption {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 130%;
+}
+
+.contenedor-circle {
+	padding: 1% 0;
+}
+
+.dot, .dot:hover {
+	cursor: pointer;
+}
+
+.dot:hover {
+	color: whitesmoke;
 }
 
 /* Fading animation */
