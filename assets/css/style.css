@@ -124,6 +124,10 @@ body {
 	display: none;
 }
 
+.mostrar {
+	display: block;
+}
+
 header {
 	width: 100%;
 	height: 18vh;
@@ -173,7 +177,7 @@ header {
 }
 
 /* Fading animation */
-/*.fade {
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -188,4 +192,4 @@ header {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}*/
+}

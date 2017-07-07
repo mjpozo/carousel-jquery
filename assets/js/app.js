@@ -1,18 +1,27 @@
 
 $(document).ready(function(){
 
-	var x = $(".contenedor-img");
+	
+	var cont = 0;
+	showSlides();
 
+	
 	function showSlides(){
-		var cont = 0;
-	for (i=0 ; i<x.lenght ; i++){
-		$("#cont-" + i.toString()).addClass("escondido");
-		if (cont == index){
-			$("#cont-" + i.toString()).removeClass("escondido");
+		var slides = $(".contenedor-img");
+
+		console.log(slides.length)
+		for (i=0 ; i<slides.length ; i++){
+			console.log(i)
+			if(cont > slides.length){
+				cont=0;
+			}
+			$(".cont-" + i.toString()).removeClass("escondido").addClass("mostrar"); 
+			cont++;
+			}
+			console.log("cont: " + cont)
+			setTimeout(showSlides, 3000); 
 		}
-		cont++;
-	}
-	}
+	
 	
 
 
@@ -25,7 +34,6 @@ $(document).ready(function(){
 		cont++;
 	});*/
 
-	setTimeout(showSlides, 5000);
 
 });
 
